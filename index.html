@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIYAZANIME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root { --red: #e50914; --black: #0b0b0b; --card: #141414; }
+        body { background: var(--black); color: white; font-family: sans-serif; margin: 0; padding-bottom: 80px; }
+        
+        /* КРАСИВЫЙ ШРИФТ NIYAZANIME */
+        .header { padding: 20px; text-align: center; background: #000; border-bottom: 2px solid var(--red); }
+        .logo { font-family: 'Bebas Neue', cursive; font-size: 42px; color: var(--red); letter-spacing: 4px; }
+
+        .container { padding: 15px; }
+        .section-title { font-family: 'Bebas Neue'; font-size: 24px; margin: 20px 0 10px; color: #fff; }
+
+        /* СЕТКА АНИМЕ (3 ШТУКИ) */
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .movie { background: var(--card); border-radius: 10px; overflow: hidden; border: 1px solid #333; }
+        .movie img { width: 100%; aspect-ratio: 2/3; object-fit: cover; background: #222; }
+        .info { padding: 10px; }
+        h3 { margin: 5px 0; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .watch-btn { background: var(--red); color: white; border: none; width: 100%; padding: 10px; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 12px; }
+
+        /* НИЖНЯЯ ПАНЕЛЬ (КРУТАЯ КНОПКА ЧАТА) */
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: rgba(0,0,0,0.95); display: flex; justify-content: space-around; padding: 15px 0; border-top: 1px solid #333; }
+        .nav-item { color: #888; text-decoration: none; font-size: 12px; font-weight: bold; text-align: center; flex: 1; }
+        .nav-item.active { color: var(--red); }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">NIYAZANIME</div>
+</div>
+
+<div class="container">
+    <div class="section-title">СЕЙЧАС В ТРЕНДЕ</div>
+    <div class="grid">
+        <div class="movie">
+            <img src="2TP018QS51eFzJPCgvHCYg.png" alt="Твое имя">
+            <div class="info">
+                <h3>Твое имя</h3>
+                <button class="watch-btn">СМОТРЕТЬ</button>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="2026-01-30-08-13-12-image.png" alt="Унесенные призраками">
+            <div class="info">
+                <h3>Унесенные призраками</h3>
+                <button class="watch-btn">СМОТРЕТЬ</button>
+            </div>
+        </div>
+
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGJjNzZkN2UtMjljNy00ZTM1LWFmZGUtYmZlYmY1NzEzNjhlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Дитя погоды">
+            <div class="info">
+                <h3>Дитя погоды</h3>
+                <button class="watch-btn">СМОТРЕТЬ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom-nav">
+    <div class="nav-item active">ГЛАВНАЯ</div>
+    <div class="nav-item">ПОИСК</div>
+    <div class="nav-item" onclick="location.href='index5.html'" style="color: #fff; background: var(--red); margin: -5px 10px; padding: 10px; border-radius: 10px;">ЧАТ</div>
+</div>
+
+</body>
+  </html>
+  
